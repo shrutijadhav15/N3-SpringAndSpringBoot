@@ -6,10 +6,14 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
 
-<bean id="bread" class="org.tnsif.autowiredexample.Bread" />
-<bean id="cake" class="org.tnsif.autowiredexample.Cake" autowire="byType">
+<!--bean id="bread" class="org.tnsif.autowiredexample.Bread" /-->
+<!--bean id="cake" class="org.tnsif.autowiredexample.Cake" autowire="byType"-->
 	<!-- when we dont want to object we can used bytype-->
 <!--property name="b" ref="bread"></property-->
+<!--bean id="b" class="org.tnsif.autowiredexample.Bread" /-->
+<!--bean id="cake" class="org.tnsif.autowiredexample.Cake" autowire="byName"-->
+	<bean id="b" class="org.tnsif.autowiredexample.Bread" />
+<bean id="cake" class="org.tnsif.autowiredexample.Cake" autowire="constructor">
 
 </bean>
 </beans>
